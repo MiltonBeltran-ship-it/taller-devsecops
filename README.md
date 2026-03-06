@@ -23,13 +23,17 @@ Si un tercero obtiene tu llave privada, puede hacerse pasar por ti y acceder a t
 
 **Principio de Mínimo Privilegio:** Si decides usar un Token de Acceso Personal (PAT), ¿qué riesgos conlleva asignarle permisos de "Administrador" (Full Control) en lugar de solo permisos de "Lectura/Escritura"?
 
-p align="center">
+<p align="center">
   <img src="Imagenes/Principio de Mínimo Privilegio.png" width="350">
 </p>
 
 Asignar permisos de “Administrador” a un PAT le da mucho más poder del que realmente necesita. Un token con privilegios elevados puede crear o borrar repositorios, administrar llaves SSH, modificar configuraciones críticas e incluso eliminar información. Desde el punto de vista de seguridad, esto viola el principio de mínimo privilegio y aumenta el impacto de un posible robo o filtración del token.
 
 **Higiene del Repositorio:** ¿Para qué sirve el archivo `.gitignore` desde una perspectiva de seguridad? (Menciona al menos dos tipos de archivos que nunca deberían subirse al repositorio remoto).
+
+<p align="center">
+  <img src="Imagenes/Higiene del Repositorio.png" width="350">
+</p>
 
 El archivo .gitignore ayuda a evitar que archivos sensibles o innecesarios terminen en el repositorio. Desde una perspectiva de seguridad, evita que se suban credenciales, configuraciones internas o archivos generados por el sistema.
 Dos tipos de archivos que nunca deben subirse son:
@@ -38,6 +42,10 @@ Dos tipos de archivos que nunca deben subirse son:
 **Archivos temporales o de sistema**, como `.DS_Store` , `thumbs.db` o carpetas de compilación (`node_modules, bin, obj`).
 
 **Exposición de Secretos:** Si accidentalmente subes una llave de API o una contraseña al repositorio en GitHub, ¿es suficiente con borrarla y hacer un nuevo commit? Justifica tu respuesta.
+
+<p align="center">
+  <img src="Imagenes/Exposición de Secretos.png" width="350">
+</p>
 
 No, no es suficiente.
 Aunque borres el archivo en un commit posterior, la información queda guardada en el historial del repositorio, por lo que cualquiera con acceso podría recuperarla. La medida correcta es:
