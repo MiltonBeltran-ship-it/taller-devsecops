@@ -1,5 +1,7 @@
 # ***Taller 1***
 
+Milton Alexander Beltran Beltran
+
 DevSecOps es una forma de trabajar donde el desarrollo, las operaciones y la seguridad colaboran desde el inicio del proyecto. Su idea principal es integrar la seguridad en cada etapa para detectar problemas a tiempo y construir software más seguro sin retrasar el proceso.
 
 **Trazabilidad:** ¿Por qué es un riesgo de seguridad dejar la configuración de `user.name` y `user.email` vacía o utilizar datos genéricos en un entorno empresarial?
