@@ -50,7 +50,7 @@ Dos tipos de archivos que nunca deben subirse son:
 </p>
 
 No, no es suficiente.
-Aunque borres el archivo en un commit posterior, la información queda guardada en el historial del repositorio, por lo que cualquiera con acceso podría recuperarla. La medida correcta es:
+Aunque se borre el archivo en un commit posterior, la información queda guardada en el historial del repositorio, por lo que cualquiera con acceso podría recuperarla. La medida correcta es:
 
 **Revocar la llave expuesta** (invalidarla).
 Quitarla del historial mediante herramientas como `git filter-branch` o `git filter-repo`.
