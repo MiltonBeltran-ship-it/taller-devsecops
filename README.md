@@ -6,7 +6,7 @@ DevSecOps es una forma de trabajar donde el desarrollo, las operaciones y la seg
 
 
 <p align="center">
-  ![Trazabilidad](Imagenes/Trazabilidad.png)
+  <img src="Imagenes/Trazabilidad.png" width="350">
 </p>
 
 
