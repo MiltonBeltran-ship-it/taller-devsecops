@@ -17,7 +17,7 @@ Si un tercero obtiene tu llave privada, puede hacerse pasar por ti y acceder a t
 
 Asignar permisos de “Administrador” a un PAT le da mucho más poder del que realmente necesita. Un token con privilegios elevados puede crear o borrar repositorios, administrar llaves SSH, modificar configuraciones críticas e incluso eliminar información. Desde el punto de vista de seguridad, esto viola el principio de mínimo privilegio y aumenta el impacto de un posible robo o filtración del token.
 
-**Higiene del Repositorio:** ¿Para qué sirve el archivo ´.gitignore´ desde una perspectiva de seguridad? (Menciona al menos dos tipos de archivos que nunca deberían subirse al repositorio remoto).
+**Higiene del Repositorio:** ¿Para qué sirve el archivo `.gitignore` desde una perspectiva de seguridad? (Menciona al menos dos tipos de archivos que nunca deberían subirse al repositorio remoto).
 
 El archivo .gitignore ayuda a evitar que archivos sensibles o innecesarios terminen en el repositorio. Desde una perspectiva de seguridad, evita que se suban credenciales, configuraciones internas o archivos generados por el sistema.
 Dos tipos de archivos que nunca deben subirse son:
