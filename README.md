@@ -41,6 +41,7 @@ El archivo .gitignore ayuda a evitar que archivos sensibles o innecesarios termi
 Dos tipos de archivos que nunca deben subirse son:
 
 **Llaves privadas**, tokens o contraseñas (por ejemplo: .pem, .key, .env).
+
 **Archivos temporales o de sistema**, como `.DS_Store` , `thumbs.db` o carpetas de compilación (`node_modules, bin, obj`).
 
 **Exposición de Secretos:** Si accidentalmente subes una llave de API o una contraseña al repositorio en GitHub, ¿es suficiente con borrarla y hacer un nuevo commit? Justifica tu respuesta.
