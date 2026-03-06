@@ -9,10 +9,13 @@ DevSecOps es una forma de trabajar donde el desarrollo, las operaciones y la seg
   <img src="Imagenes/Trazabilidad.png" width="350">
 </p>
 
-
 Usar un nombre o correo genérico afecta la trazabilidad porque impide identificar quién realizó cada cambio en el código. En un ambiente empresarial esto es un riesgo, ya que dificulta investigar errores, auditar actividades o detectar acciones malintencionadas. Cuando los commits no están vinculados a una persona real, se pierde responsabilidad individual y es más fácil que alguien oculte actividades indebidas dentro del repositorio.
 
 **Cifrado Asimétrico:** En el caso de usar SSH, ¿cuál es la diferencia funcional entre la llave privada y la pública? ¿Qué pasaría si un tercero obtiene acceso a tu llave privada?
+
+<p align="center">
+  <img src="Imagenes/Cifrado Asimétrico.png" width="350">
+</p>
 
 En un sistema de cifrado asimétrico, la **llave pública** se comparte y sirve para que los servidores (como GitHub) puedan validar tu identidad.
 La **llave privada** nunca debe salir de tu equipo: es la que te identifica como el propietario legítimo de esa identidad digital.
