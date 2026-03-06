@@ -8,9 +8,8 @@ Usar un nombre o correo genérico afecta la trazabilidad porque impide identific
 
 **Cifrado Asimétrico:** En el caso de usar SSH, ¿cuál es la diferencia funcional entre la llave privada y la pública? ¿Qué pasaría si un tercero obtiene acceso a tu llave privada?
 
-
-En un sistema de cifrado asimétrico, la llave pública se comparte y sirve para que los servidores (como GitHub) puedan validar tu identidad.
-La llave privada nunca debe salir de tu equipo: es la que te identifica como el propietario legítimo de esa identidad digital.
+En un sistema de cifrado asimétrico, la **llave pública** se comparte y sirve para que los servidores (como GitHub) puedan validar tu identidad.
+La **llave privada** nunca debe salir de tu equipo: es la que te identifica como el propietario legítimo de esa identidad digital.
 Si un tercero obtiene tu llave privada, puede hacerse pasar por ti y acceder a tus repositorios como si fueras tú. En el peor de los casos podría modificar o borrar proyectos enteros. Por eso la llave privada debe mantenerse protegida y jamás compartirse.
 
 **Principio de Mínimo Privilegio:** Si decides usar un Token de Acceso Personal (PAT), ¿qué riesgos conlleva asignarle permisos de "Administrador" (Full Control) en lugar de solo permisos de "Lectura/Escritura"?
@@ -22,16 +21,16 @@ Asignar permisos de “Administrador” a un PAT le da mucho más poder del que 
 El archivo .gitignore ayuda a evitar que archivos sensibles o innecesarios terminen en el repositorio. Desde una perspectiva de seguridad, evita que se suban credenciales, configuraciones internas o archivos generados por el sistema.
 Dos tipos de archivos que nunca deben subirse son:
 
-Llaves privadas, tokens o contraseñas (por ejemplo: .pem, .key, .env).
-Archivos temporales o de sistema, como .DS_Store, thumbs.db o carpetas de compilación (node_modules, bin, obj).
+**Llaves privadas**, tokens o contraseñas (por ejemplo: .pem, .key, .env).
+**Archivos temporales o de sistema**, como `.DS_Store`, `thumbs.db` o carpetas de compilación (`node_modules, bin, obj`).
 
 **Exposición de Secretos:** Si accidentalmente subes una llave de API o una contraseña al repositorio en GitHub, ¿es suficiente con borrarla y hacer un nuevo commit? Justifica tu respuesta.
 
 No, no es suficiente.
 Aunque borres el archivo en un commit posterior, la información queda guardada en el historial del repositorio, por lo que cualquiera con acceso podría recuperarla. La medida correcta es:
 
-Revocar la llave expuesta (invalidarla).
-Quitarla del historial mediante herramientas como git filter-branch o git filter-repo.
+**Revocar la llave expuesta** (invalidarla).
+Quitarla del historial mediante herramientas como `git filter-branch` o `git filter-repo`.
 Generar una nueva llave o contraseña y reemplazarla en los sistemas que la usen.
 
 Solo así se asegura que el secreto comprometido ya no pueda ser utilizado
